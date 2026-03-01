@@ -1,73 +1,52 @@
-# Minhas primeiras variáveis
-"""nome = "Hercules"
-idade = 28
-altura = 1.73
-estudando_python = True
+#Exercicios
 
+"""Exercício 5  [MÉDIO]
+Conversor de temperatura
+Peça uma temperatura em Celsius ao usuário e converta para Fahrenheit e Kelvin. Exiba os três valores formatados com 2 casas decimais."""
+
+"""temperatura = int(input("Digite a temperatura em grau celsius: "))
+
+print(f"Temperatura em Celsius: {temperatura}")
+
+fahrenheit = (temperatura * 9/5) + 32
+
+print(f"Temperatura em Fahrenheit: {fahrenheit:.2f}")
+
+kelvin = temperatura + 273.15
+
+print(f"Temperatura em kelvin: {kelvin:.2f}")"""
+
+"""Exercício 6  [MÉDIO]
+Ficha de cadastro formatada
+Peça ao usuário: nome completo, idade, altura e salário. Exiba uma ficha formatada com todos os dados, altura com 2 casas decimais e salário com 2 casas decimais e símbolo R$."""
+
+"""nome = input("Digite seu nome: ")
+idade = input("Digite sua idade: ")
+altura = float(input("Digite sua altura: "))
+salario = float(input("Digite seu salário: "))
+
+
+print("===== FICHA CADASTRAL =====")
 print(f"Nome: {nome}")
 print(f"Idade: {idade}")
-print(f"Altura: {altura}m")
-print(f"Estudando Python: {estudando_python}")
-print(f"Olá, {nome}! Você tem {idade} anos e está indo muito bem!")
+print(f"Altura: {altura:.2f}")
+print(f"Salário: R${salario:.2f}\n")
+print("===========================")"""
 
-# Entrada de dados
-nome = input("Qual é seu nome? ")
-idade = input("Qual é sua idade? ")
+"""Exercício 7  [MÉDIO]
+Calculadora de IMC
+Peça peso (kg) e altura (m) ao usuário. Calcule o IMC (peso dividido por altura ao quadrado) e exiba o valor com 2 casas decimais. Calcule também o peso ideal para a altura (usando IMC ideal = 22) e exiba.
+💡 Dicas:
+• IMC = peso / (altura * altura) ou peso / altura**2"""
 
-print(f"Olá, {nome}! Você tem {idade} anos.")
-print(f"Em 10 anos você terá {int(idade) + 10} anos.")"""
 
-# Exercicios
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura: "))
 
-"""🟢 Nível Fácil
-Exercícios diretos usando o que você aprendeu hoje. Se ainda estiver inseguro com algum conceito, volte e releia antes de tentar."""
- 
-""" Exercício 1  [FÁCIL]
-Apresentação pessoal
-Crie variáveis com seu nome, idade, cidade e profissão desejada. Use uma f-string para exibir uma apresentação completa em uma única linha."""
+imc = peso/(altura*altura)
 
-"""nome = "Hercules"
-idade = 28
-cidade = "Jundiai"
-profissão_desejada = "Desenvolvedor RPA"
+print(f"Seu IMC é de: {imc:.2f}")
 
-print(f"Olá! Meu nome é {nome}, tenho {idade} anos, moro em {cidade} e quero ser {profissão_desejada}.")"""
+peso_ideal = 22*(altura**2)
 
-"""Exercício 2  [FÁCIL]
-Tipos de dados na prática
-Crie uma variável de cada tipo (str, int, float, bool) e use a função type() para imprimir o tipo de cada uma."""
-
-"""nome2 = "H"
-idade2 = 28
-altura2 = 1.73
-esta_cansado = True
-
-print(type(nome2))
-print(type(idade2))
-print(type(altura2))
-print(type(esta_cansado))"""
-
-"""Exercício 3  [FÁCIL]
-Calculadora simples com input
-Peça dois números ao usuário e exiba a soma, subtração, multiplicação e divisão entre eles."""
-
-"""num1 = int(input("Digite o primeiro número: "))
-num2 = int(input("Digite o segundo número: "))
-
-print(num1 + num2)
-print(num1 - num2)
-print(num1 * num2)
-print(num1 / num2)"""
-
-"""Exercício 4  [FÁCIL]
-Troca de variáveis
-Crie duas variáveis 'a = 10' e 'b = 20'. Troque os valores entre elas sem usar uma terceira variável e imprima o resultado antes e depois da troca."""
-
-a = 10
-b = 20
-
-print(f"Antes: {a}, {b}")
-
-a, b = b, a
-
-print(f"Depois: {a}, {b}\n")
+print(f"Seu peso ideal é de: {peso_ideal:.2f}\n")
